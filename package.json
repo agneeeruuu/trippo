@@ -19,5 +19,9 @@
   "homepage": "https://github.com/agneeeruuu/trippo#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-plugin-react": "^7.21.5"
   }
 }
