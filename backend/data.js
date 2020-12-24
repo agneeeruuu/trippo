@@ -1,7 +1,23 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+    users: [
+        {
+            name: 'Agnes',
+            email: 'admin@example.com',
+            password: bcrypt.hashSync('agneeeruuu', 8),
+            isAdmin: true,
+        },
+        {
+            name: 'Ian',
+            email: 'ian@example.com',
+            password: bcrypt.hashSync('iannn', 8),
+            isAdmin: false
+        },
+    ],
     products: [
         {
-            _id: '1',
+            // _id: '1',
             name: 'Mount 1',
             category: 'Mount',
             image: '/images/p1.jpg',
@@ -13,7 +29,7 @@ const data = {
             description: 'Jade Main Peak 3952M',
         },
         {
-            _id: '2',
+            // _id: '2',
             name: 'Mount 2',
             category: 'Mount',
             image: '/images/p2.jpg',
@@ -25,7 +41,7 @@ const data = {
             description: 'HeHuan North Peak 3422M',
         },
         {
-            _id: '3',
+            // _id: '3',
             name: 'Mount 3',
             category: 'Mount',
             image: '/images/p3.jpg',
@@ -37,7 +53,7 @@ const data = {
             description: 'Syue Mountain 3886M',
         },
         {
-            _id: '4',
+            // _id: '4',
             name: 'Mount 4',
             category: 'Mount',
             image: '/images/p4.jpg',
@@ -49,7 +65,7 @@ const data = {
             description: 'Mount Sylvania 3490M',
         },
         {
-            _id: '5',
+            // _id: '5',
             name: 'Sea 5',
             category: 'Sea',
             image: '/images/p5.jpeg',
@@ -61,7 +77,7 @@ const data = {
             description: 'Scuba Diving El Nido',
         },
         {
-            _id: '6',
+            // _id: '6',
             name: 'Sea 6',
             category: 'Sea',
             image: '/images/p6.jpeg',
