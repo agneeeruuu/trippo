@@ -102,7 +102,8 @@ export const deleteProduct = (productId) => async (dispatch, getState) => {
             headers: { Authorization: `Bearer ${userInfo.token}` }
         });
         dispatch({
-            type: PRODUCT_DELETE_SUCCESS
+            type: PRODUCT_DELETE_SUCCESS,
+            payload: data
         });
     } catch (error) {
         dispatch({
