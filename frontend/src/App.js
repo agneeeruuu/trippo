@@ -11,6 +11,7 @@ import SearchBox from './components/SearchBox';
 import SellerRoute from './components/SellerRoute';
 import CartScreen from './screens/CartScreen';
 import HomeScreen from './screens/HomeScreen';
+import MapScreen from './screens/MapScreen';
 import OrderHistoryScreen from './screens/OrderHistoryScreen';
 import OrderListScreen from './screens/OrderListScreen';
 import OrderScreen from './screens/OrderScreen';
@@ -183,6 +184,7 @@ function App() {
           <Route path="/search/category/:category/name/:name" component={SearchScreen} exact></Route>
           <Route path="/search/category/:category/name/:name/min/:min/max/:max/rating/:rating/order/:order" component={SearchScreen} exact></Route>
           <PrivateRoute path="/profile" component={ProfileScreen}></PrivateRoute>
+          <PrivateRoute path="/map" component={MapScreen}></PrivateRoute>
           <AdminRoute path="/productlist" component={ProductListScreen} exact></AdminRoute>
           <AdminRoute path="/orderlist" component={OrderListScreen} exact></AdminRoute>
           <AdminRoute path="/userlist" component={UserListScreen}></AdminRoute>

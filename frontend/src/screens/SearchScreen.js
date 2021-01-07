@@ -16,7 +16,7 @@ export default function SearchScreen(props) {
         min = 0,
         max = 0,
         rating = 0,
-        order = 'newest',
+        order = 'toprated',
     } = useParams();
 
     const productList = useSelector(state => state.productList);
